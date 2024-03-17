@@ -1,14 +1,10 @@
 import "./styles/app.css";
-import EducationForm from "./components/form/Education.jsx";
-import ExperienceForm from "./components/form/Experience.jsx";
-import GeneralInfoForm from "./components/form/GeneralInfo.jsx";
+import Forms from "./components/form/Forms.jsx";
 
 function App() {
   return (
     <>
-      <GeneralInfoForm />
-      <EducationForm />
-      <ExperienceForm />
+      <Forms />
     </>
   );
 }
