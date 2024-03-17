@@ -30,7 +30,7 @@ function GeneralInfo({ shouldExpand, toggle, displayData }) {
       <Input name="Email" type="email" value={email} setValue={setEmail} />
       <Input
         name="Phone Number"
-        type="number"
+        type="tel"
         value={phoneNumber}
         setValue={setPhoneNumber}
       />
