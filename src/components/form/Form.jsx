@@ -4,19 +4,12 @@ import SubmitIcon from "../../assets/submit-icon.svg";
 import ExpandIcon from "../../assets/expand-icon.svg";
 import CollapseIcon from "../../assets/collapse-icon.svg";
 
-function Form({
-  heading,
-  children,
-  onSubmit = () => {},
-  shouldExpand,
-  toggle,
-}) {
+function Form({ heading, children, shouldExpand, toggle, onEdit, onSubmit }) {
   return (
     <form
       onSubmit={(e) => {
-        onSubmit(e);
         e.preventDefault();
-        console.log("bruh");
+        onSubmit();
       }}
     >
       <h2 onClick={toggle}>{heading}</h2>
@@ -33,7 +26,7 @@ function Form({
           <button className="left">
             <img src={SubmitIcon} alt="submit" />
           </button>
-          <button className="right">
+          <button className="right" type="button" onClick={onEdit}>
             <img src={EditIcon} alt="edit" />
           </button>
         </>
