@@ -7,13 +7,11 @@ function GeneralInfo({ shouldExpand, toggle, displayData }) {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const onSubmit = () => {
-    console.log("submit");
     displayData.setName(name);
     displayData.setEmail(email);
     displayData.setPhoneNumber(phoneNumber);
   };
   const onEdit = () => {
-    console.log("edit");
     setName(displayData.name);
     setEmail(displayData.email);
     setPhoneNumber(displayData.phoneNumber);

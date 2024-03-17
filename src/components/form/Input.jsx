@@ -2,6 +2,7 @@ import "../../styles/input.css";
 
 function Input({ name, id = name, type = "text", value, setValue }) {
   const inputProps = {
+    autoComplete: "on",
     id: id,
     value: value,
     type: type,
