@@ -1,3 +1,4 @@
+import "./styles/app.css";
 import EducationForm from "./components/form/Education.jsx";
 import ExperienceForm from "./components/form/Experience.jsx";
 import GeneralInfoForm from "./components/form/GeneralInfo.jsx";

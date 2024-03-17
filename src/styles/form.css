@@ -1,0 +1,18 @@
+form {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+form > div.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+form > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
